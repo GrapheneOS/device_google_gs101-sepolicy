@@ -25,7 +25,7 @@ type vendor_rpmbmock_data_file, file_type, data_file_type;
 # Exynos debugfs
 type vendor_ion_debugfs, fs_type, debugfs_type;
 type vendor_dmabuf_debugfs, fs_type, debugfs_type;
-type vendor_page_pinner_debugfs, fs_type, debugfs_type, sysfs_type;
+type vendor_page_pinner_debugfs, fs_type, debugfs_type;
 type vendor_mali_debugfs, fs_type, debugfs_type;
 type vendor_dri_debugfs, fs_type, debugfs_type;
 type vendor_pm_genpd_debugfs, fs_type, debugfs_type;
@@ -144,6 +144,9 @@ type sysfs_edgetpu, sysfs_type, fs_type;
 
 # Vendor sched files
 type sysfs_vendor_sched, sysfs_type, fs_type;
+userdebug_or_eng(`
+    typeattribute sysfs_vendor_sched mlstrustedobject;
+')
 type proc_vendor_sched, proc_type, fs_type;
 
 # GPS
@@ -211,3 +214,6 @@ type vendor_wlc_fwupdata_file, vendor_file_type, file_type;
 
 # SJTAG
 type sysfs_sjtag, fs_type, sysfs_type;
+userdebug_or_eng(`
+    typeattribute sysfs_sjtag mlstrustedobject;
+')
