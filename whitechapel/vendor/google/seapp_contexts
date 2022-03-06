@@ -1,7 +1,7 @@
-# oemrilservice
+# oemrilservice (Telecoms stack)
 user=_app isPrivApp=true name=com.samsung.slsi.telephony.oemril domain=oemrilservice_app levelFrom=all
 
-# Samsung S.LSI IMS
+# Samsung S.LSI IMS (Telecoms stack)
 user=_app isPrivApp=true name=com.shannon.imsservice domain=vendor_ims_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.imsservice:remote domain=vendor_ims_app levelFrom=all
 user=_app isPrivApp=true name=com.shannon.rcsservice domain=vendor_rcs_app levelFrom=all
@@ -11,8 +11,8 @@ user=_app isPrivApp=true name=com.shannon.qualifiednetworksservice domain=vendor
 # Qorvo UWB system app
 user=uwb isPrivApp=true seinfo=uwb name=com.qorvo.uwb domain=uwb_vendor_app type=uwb_vendor_data_file levelFrom=all
 
-# Domain for EuiccSupportPixel
+# Domain for EuiccSupportPixel (eSIM/NFC firmware)
 user=_app isPrivApp=true seinfo=EuiccSupportPixel name=com.google.euiccpixel domain=euiccpixel_app type=app_data_file levelFrom=all
 
-# CccDkTimeSyncService
+# CccDkTimeSyncService (UWB Car unlocking)
 user=_app isPrivApp=true name=com.google.pixel.digitalkey.timesync domain=vendor_cccdktimesync_app type=app_data_file levelFrom=all
