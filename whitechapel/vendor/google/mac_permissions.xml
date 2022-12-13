@@ -21,9 +21,6 @@
       - The default tag is consulted last if needed.
 -->
     <!-- google apps key -->
-    <signer signature="@MDS" >
-        <seinfo value="mds" />
-    </signer>
     <signer signature="@UWB" >
         <seinfo value="uwb" />
     </signer>
