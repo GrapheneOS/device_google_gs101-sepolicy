@@ -279,6 +279,7 @@
 /dev/logbuffer_tty16                u:object_r:logbuffer_device:s0
 
 # Trusty
+/vendor/bin/resku_rescue_kicker      u:object_r:tee_exec:s0
 /vendor/bin/storageproxyd            u:object_r:tee_exec:s0
 /vendor/bin/trusty_apploader         u:object_r:trusty_apploader_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.trusty                u:object_r:hal_gatekeeper_default_exec:s0
