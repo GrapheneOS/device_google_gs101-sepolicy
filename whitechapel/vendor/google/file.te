@@ -18,6 +18,8 @@ type vendor_telephony_data_file, file_type, data_file_type;
 type vendor_ims_data_file, file_type, data_file_type;
 type vendor_misc_data_file, file_type, data_file_type;
 type vendor_rpmbmock_data_file, file_type, data_file_type;
+# NFC (BP2A)
+type vendor_nfc_vendor_data_file, data_file_type, file_type;
 
 # Exynos debugfs
 type vendor_ion_debugfs, fs_type, debugfs_type;
