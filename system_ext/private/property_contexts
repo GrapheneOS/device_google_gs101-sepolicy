@@ -7,3 +7,6 @@ persist.modem.esim_profiles_exist            u:object_r:esim_modem_prop:s0    ex
 # Telephony
 telephony.TnNtn.image_switch u:object_r:telephony_modem_prop:s0    exact enum ntn tn
 telephony.ril.silent_reset    u:object_r:telephony_ril_prop:s0    exact    bool
+
+# System UI system property
+persist.vendor.pulsar    u:object_r:vendor_sysuig_prop:s0
