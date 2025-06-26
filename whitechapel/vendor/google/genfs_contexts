@@ -345,3 +345,15 @@ genfscon sysfs /devices/platform/25f40000.etm    u:object_r:sysfs_devices_cs_etm
 
 # BootControl
 genfscon sysfs /kernel/boot_control/blow_ar      u:object_r:sysfs_bootctl:s0
+
+# USB (from BP2A)
+genfscon sysfs /devices/platform/11110000.usb/11110000.dwc3/udc/11110000.dwc3/state   u:object_r:sysfs_udc:s0
+
+# Wake up nodes (from BP2A)
+genfscon sysfs /devices/platform/odm/odm:fps_touch_handler/power/wakeup                                                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/odm/odm:fps_touch_handler/wakeup                                                           u:object_r:sysfs_wakeup:s0
+
+# Battery (from BP2A)
+genfscon sysfs /class/power_supply/wireless/device/version                              u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /class/power_supply/wireless/device/status                               u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /class/power_supply/wireless/device/fw_rev                               u:object_r:sysfs_batteryinfo:s0
